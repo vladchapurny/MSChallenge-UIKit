@@ -8,16 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		ADE6BD8D2819BADA00637158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BD8C2819BADA00637158 /* AppDelegate.swift */; };
-		ADE6BD912819BADA00637158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BD902819BADA00637158 /* ViewController.swift */; };
+		ADE6BD912819BADA00637158 /* ProfileCreationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BD902819BADA00637158 /* ProfileCreationViewController.swift */; };
 		ADE6BD942819BADA00637158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD922819BADA00637158 /* Main.storyboard */; };
 		ADE6BD962819BADB00637158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD952819BADB00637158 /* Assets.xcassets */; };
-		ADE6BD992819BADB00637158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */; };
 		ADE6BDC22819C6EB00637158 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDC12819C6EB00637158 /* Portfolio.swift */; };
 		ADE6BDD62819C90400637158 /* Portfolio_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDD52819C90400637158 /* Portfolio_test.swift */; };
+		ADE6BDD82819CD2000637158 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDD72819CD2000637158 /* HeaderView.swift */; };
+		ADE6BDE92819D1FE00637158 /* ProfileCreationViewController_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDE82819D1FE00637158 /* ProfileCreationViewController_test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		ADE6BDD02819C8BF00637158 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = ADE6BD812819BADA00637158 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ADE6BD882819BADA00637158;
+			remoteInfo = "MSChallenge-UIKit";
+		};
+		ADE6BDE32819D18C00637158 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADE6BD812819BADA00637158 /* Project object */;
 			proxyType = 1;
@@ -29,14 +37,16 @@
 /* Begin PBXFileReference section */
 		ADE6BD892819BADA00637158 /* MSChallenge-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSChallenge-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6BD8C2819BADA00637158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADE6BD902819BADA00637158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ADE6BD902819BADA00637158 /* ProfileCreationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCreationViewController.swift; sourceTree = "<group>"; };
 		ADE6BD932819BADA00637158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADE6BD952819BADB00637158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		ADE6BD982819BADB00637158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADE6BD9A2819BADB00637158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		ADE6BDC12819C6EB00637158 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
 		ADE6BDCC2819C8BF00637158 /* MSChallenge-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSChallenge-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6BDD52819C90400637158 /* Portfolio_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio_test.swift; sourceTree = "<group>"; };
+		ADE6BDD72819CD2000637158 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		ADE6BDDD2819D18C00637158 /* MSChallenge-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSChallenge-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE6BDE82819D1FE00637158 /* ProfileCreationViewController_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCreationViewController_test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +64,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADE6BDDA2819D18C00637158 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -62,6 +79,7 @@
 			children = (
 				ADE6BD8B2819BADA00637158 /* MSChallenge-UIKit */,
 				ADE6BDCD2819C8BF00637158 /* MSChallenge-UIKitTests */,
+				ADE6BDDE2819D18C00637158 /* MSChallenge-UIKitUITests */,
 				ADE6BD8A2819BADA00637158 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -71,6 +89,7 @@
 			children = (
 				ADE6BD892819BADA00637158 /* MSChallenge-UIKit.app */,
 				ADE6BDCC2819C8BF00637158 /* MSChallenge-UIKitTests.xctest */,
+				ADE6BDDD2819D18C00637158 /* MSChallenge-UIKitUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,7 +118,7 @@
 		ADE6BDBD2819BD7C00637158 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				ADE6BD902819BADA00637158 /* ViewController.swift */,
+				ADE6BD902819BADA00637158 /* ProfileCreationViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -107,6 +126,7 @@
 		ADE6BDBE2819BD8900637158 /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				ADE6BDD72819CD2000637158 /* HeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -124,7 +144,6 @@
 			children = (
 				ADE6BD8C2819BADA00637158 /* AppDelegate.swift */,
 				ADE6BD922819BADA00637158 /* Main.storyboard */,
-				ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -135,6 +154,14 @@
 				ADE6BDD52819C90400637158 /* Portfolio_test.swift */,
 			);
 			path = "MSChallenge-UIKitTests";
+			sourceTree = "<group>";
+		};
+		ADE6BDDE2819D18C00637158 /* MSChallenge-UIKitUITests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6BDE82819D1FE00637158 /* ProfileCreationViewController_test.swift */,
+			);
+			path = "MSChallenge-UIKitUITests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,6 +202,24 @@
 			productReference = ADE6BDCC2819C8BF00637158 /* MSChallenge-UIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		ADE6BDDC2819D18C00637158 /* MSChallenge-UIKitUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ADE6BDE52819D18C00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitUITests" */;
+			buildPhases = (
+				ADE6BDD92819D18C00637158 /* Sources */,
+				ADE6BDDA2819D18C00637158 /* Frameworks */,
+				ADE6BDDB2819D18C00637158 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				ADE6BDE42819D18C00637158 /* PBXTargetDependency */,
+			);
+			name = "MSChallenge-UIKitUITests";
+			productName = "MSChallenge-UIKitUITests";
+			productReference = ADE6BDDD2819D18C00637158 /* MSChallenge-UIKitUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -189,6 +234,11 @@
 						CreatedOnToolsVersion = 13.2.1;
 					};
 					ADE6BDCB2819C8BF00637158 = {
+						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
+						TestTargetID = ADE6BD882819BADA00637158;
+					};
+					ADE6BDDC2819D18C00637158 = {
 						CreatedOnToolsVersion = 13.2.1;
 						LastSwiftMigration = 1320;
 						TestTargetID = ADE6BD882819BADA00637158;
@@ -210,6 +260,7 @@
 			targets = (
 				ADE6BD882819BADA00637158 /* MSChallenge-UIKit */,
 				ADE6BDCB2819C8BF00637158 /* MSChallenge-UIKitTests */,
+				ADE6BDDC2819D18C00637158 /* MSChallenge-UIKitUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -219,13 +270,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE6BD992819BADB00637158 /* LaunchScreen.storyboard in Resources */,
 				ADE6BD962819BADB00637158 /* Assets.xcassets in Resources */,
 				ADE6BD942819BADA00637158 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		ADE6BDCA2819C8BF00637158 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		ADE6BDDB2819D18C00637158 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -240,8 +297,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE6BDC22819C6EB00637158 /* Portfolio.swift in Sources */,
-				ADE6BD912819BADA00637158 /* ViewController.swift in Sources */,
+				ADE6BD912819BADA00637158 /* ProfileCreationViewController.swift in Sources */,
 				ADE6BD8D2819BADA00637158 /* AppDelegate.swift in Sources */,
+				ADE6BDD82819CD2000637158 /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +311,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		ADE6BDD92819D18C00637158 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ADE6BDE92819D1FE00637158 /* ProfileCreationViewController_test.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -260,6 +326,11 @@
 			isa = PBXTargetDependency;
 			target = ADE6BD882819BADA00637158 /* MSChallenge-UIKit */;
 			targetProxy = ADE6BDD02819C8BF00637158 /* PBXContainerItemProxy */;
+		};
+		ADE6BDE42819D18C00637158 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = ADE6BD882819BADA00637158 /* MSChallenge-UIKit */;
+			targetProxy = ADE6BDE32819D18C00637158 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -270,14 +341,6 @@
 				ADE6BD932819BADA00637158 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				ADE6BD982819BADB00637158 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -504,6 +567,53 @@
 			};
 			name = Release;
 		};
+		ADE6BDE62819D18C00637158 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMHRAT3DN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "VladHouse.MSChallenge-UIKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MSChallenge-UIKit";
+			};
+			name = Debug;
+		};
+		ADE6BDE72819D18C00637158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMHRAT3DN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "VladHouse.MSChallenge-UIKitUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "MSChallenge-UIKit";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -530,6 +640,15 @@
 			buildConfigurations = (
 				ADE6BDD32819C8BF00637158 /* Debug */,
 				ADE6BDD42819C8BF00637158 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ADE6BDE52819D18C00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ADE6BDE62819D18C00637158 /* Debug */,
+				ADE6BDE72819D18C00637158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

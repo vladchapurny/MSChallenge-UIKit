@@ -51,5 +51,6 @@ class Portfolio_test: XCTestCase {
         XCTAssertEqual(portfolio.password, "c")
         XCTAssertEqual(portfolio.website, "d")
     }
+    
     //Add more test cases!
 }

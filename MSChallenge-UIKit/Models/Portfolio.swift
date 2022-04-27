@@ -26,7 +26,7 @@ struct Portfolio {
     // Adding init
     init() {}
     
-    //TODO: Encapsulation in the future.
+    // TODO: Encapsulation in the future.
     
 }
 
