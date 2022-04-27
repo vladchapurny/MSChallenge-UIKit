@@ -8,14 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		ADE6BD8D2819BADA00637158 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BD8C2819BADA00637158 /* AppDelegate.swift */; };
-		ADE6BD8F2819BADA00637158 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BD8E2819BADA00637158 /* SceneDelegate.swift */; };
 		ADE6BD912819BADA00637158 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BD902819BADA00637158 /* ViewController.swift */; };
 		ADE6BD942819BADA00637158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD922819BADA00637158 /* Main.storyboard */; };
 		ADE6BD962819BADB00637158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD952819BADB00637158 /* Assets.xcassets */; };
 		ADE6BD992819BADB00637158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */; };
 		ADE6BDA42819BADB00637158 /* MSChallenge_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDA32819BADB00637158 /* MSChallenge_UIKitTests.swift */; };
 		ADE6BDAE2819BADB00637158 /* MSChallenge_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDAD2819BADB00637158 /* MSChallenge_UIKitUITests.swift */; };
-		ADE6BDB02819BADB00637158 /* MSChallenge_UIKitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDAF2819BADB00637158 /* MSChallenge_UIKitUITestsLaunchTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +36,6 @@
 /* Begin PBXFileReference section */
 		ADE6BD892819BADA00637158 /* MSChallenge-UIKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MSChallenge-UIKit.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6BD8C2819BADA00637158 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		ADE6BD8E2819BADA00637158 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		ADE6BD902819BADA00637158 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		ADE6BD932819BADA00637158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ADE6BD952819BADB00637158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,7 +45,6 @@
 		ADE6BDA32819BADB00637158 /* MSChallenge_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChallenge_UIKitTests.swift; sourceTree = "<group>"; };
 		ADE6BDA92819BADB00637158 /* MSChallenge-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSChallenge-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6BDAD2819BADB00637158 /* MSChallenge_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChallenge_UIKitUITests.swift; sourceTree = "<group>"; };
-		ADE6BDAF2819BADB00637158 /* MSChallenge_UIKitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChallenge_UIKitUITestsLaunchTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,13 +95,11 @@
 		ADE6BD8B2819BADA00637158 /* MSChallenge-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				ADE6BD8C2819BADA00637158 /* AppDelegate.swift */,
-				ADE6BD8E2819BADA00637158 /* SceneDelegate.swift */,
-				ADE6BD902819BADA00637158 /* ViewController.swift */,
-				ADE6BD922819BADA00637158 /* Main.storyboard */,
-				ADE6BD952819BADB00637158 /* Assets.xcassets */,
-				ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */,
-				ADE6BD9A2819BADB00637158 /* Info.plist */,
+				ADE6BDBE2819BD8900637158 /* Views */,
+				ADE6BDBD2819BD7C00637158 /* ViewControllers */,
+				ADE6BDBC2819BD6B00637158 /* Models */,
+				ADE6BDBF2819BD9100637158 /* Resources */,
+				ADE6BDC02819BDAC00637158 /* Core */,
 			);
 			path = "MSChallenge-UIKit";
 			sourceTree = "<group>";
@@ -122,9 +116,49 @@
 			isa = PBXGroup;
 			children = (
 				ADE6BDAD2819BADB00637158 /* MSChallenge_UIKitUITests.swift */,
-				ADE6BDAF2819BADB00637158 /* MSChallenge_UIKitUITestsLaunchTests.swift */,
 			);
 			path = "MSChallenge-UIKitUITests";
+			sourceTree = "<group>";
+		};
+		ADE6BDBC2819BD6B00637158 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		ADE6BDBD2819BD7C00637158 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6BD902819BADA00637158 /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ADE6BDBE2819BD8900637158 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		ADE6BDBF2819BD9100637158 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6BD952819BADB00637158 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		ADE6BDC02819BDAC00637158 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6BD8C2819BADA00637158 /* AppDelegate.swift */,
+				ADE6BD922819BADA00637158 /* Main.storyboard */,
+				ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */,
+				ADE6BD9A2819BADB00637158 /* Info.plist */,
+			);
+			path = Core;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,7 +294,6 @@
 			files = (
 				ADE6BD912819BADA00637158 /* ViewController.swift in Sources */,
 				ADE6BD8D2819BADA00637158 /* AppDelegate.swift in Sources */,
-				ADE6BD8F2819BADA00637158 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -277,7 +310,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE6BDAE2819BADB00637158 /* MSChallenge_UIKitUITests.swift in Sources */,
-				ADE6BDB02819BADB00637158 /* MSChallenge_UIKitUITestsLaunchTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
