@@ -12,19 +12,12 @@
 		ADE6BD942819BADA00637158 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD922819BADA00637158 /* Main.storyboard */; };
 		ADE6BD962819BADB00637158 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD952819BADB00637158 /* Assets.xcassets */; };
 		ADE6BD992819BADB00637158 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */; };
-		ADE6BDA42819BADB00637158 /* MSChallenge_UIKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDA32819BADB00637158 /* MSChallenge_UIKitTests.swift */; };
-		ADE6BDAE2819BADB00637158 /* MSChallenge_UIKitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDAD2819BADB00637158 /* MSChallenge_UIKitUITests.swift */; };
+		ADE6BDC22819C6EB00637158 /* Portfolio.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDC12819C6EB00637158 /* Portfolio.swift */; };
+		ADE6BDD62819C90400637158 /* Portfolio_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDD52819C90400637158 /* Portfolio_test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		ADE6BDA02819BADB00637158 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = ADE6BD812819BADA00637158 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = ADE6BD882819BADA00637158;
-			remoteInfo = "MSChallenge-UIKit";
-		};
-		ADE6BDAA2819BADB00637158 /* PBXContainerItemProxy */ = {
+		ADE6BDD02819C8BF00637158 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = ADE6BD812819BADA00637158 /* Project object */;
 			proxyType = 1;
@@ -41,10 +34,9 @@
 		ADE6BD952819BADB00637158 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ADE6BD982819BADB00637158 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ADE6BD9A2819BADB00637158 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ADE6BD9F2819BADB00637158 /* MSChallenge-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSChallenge-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADE6BDA32819BADB00637158 /* MSChallenge_UIKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChallenge_UIKitTests.swift; sourceTree = "<group>"; };
-		ADE6BDA92819BADB00637158 /* MSChallenge-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSChallenge-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		ADE6BDAD2819BADB00637158 /* MSChallenge_UIKitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MSChallenge_UIKitUITests.swift; sourceTree = "<group>"; };
+		ADE6BDC12819C6EB00637158 /* Portfolio.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio.swift; sourceTree = "<group>"; };
+		ADE6BDCC2819C8BF00637158 /* MSChallenge-UIKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSChallenge-UIKitTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADE6BDD52819C90400637158 /* Portfolio_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Portfolio_test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,14 +47,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADE6BD9C2819BADB00637158 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADE6BDA62819BADB00637158 /* Frameworks */ = {
+		ADE6BDC92819C8BF00637158 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -76,8 +61,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE6BD8B2819BADA00637158 /* MSChallenge-UIKit */,
-				ADE6BDA22819BADB00637158 /* MSChallenge-UIKitTests */,
-				ADE6BDAC2819BADB00637158 /* MSChallenge-UIKitUITests */,
+				ADE6BDCD2819C8BF00637158 /* MSChallenge-UIKitTests */,
 				ADE6BD8A2819BADA00637158 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -86,8 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE6BD892819BADA00637158 /* MSChallenge-UIKit.app */,
-				ADE6BD9F2819BADB00637158 /* MSChallenge-UIKitTests.xctest */,
-				ADE6BDA92819BADB00637158 /* MSChallenge-UIKitUITests.xctest */,
+				ADE6BDCC2819C8BF00637158 /* MSChallenge-UIKitTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -95,34 +78,20 @@
 		ADE6BD8B2819BADA00637158 /* MSChallenge-UIKit */ = {
 			isa = PBXGroup;
 			children = (
-				ADE6BDBE2819BD8900637158 /* Views */,
-				ADE6BDBD2819BD7C00637158 /* ViewControllers */,
 				ADE6BDBC2819BD6B00637158 /* Models */,
+				ADE6BDBD2819BD7C00637158 /* ViewControllers */,
+				ADE6BDBE2819BD8900637158 /* Views */,
 				ADE6BDBF2819BD9100637158 /* Resources */,
 				ADE6BDC02819BDAC00637158 /* Core */,
+				ADE6BD9A2819BADB00637158 /* Info.plist */,
 			);
 			path = "MSChallenge-UIKit";
-			sourceTree = "<group>";
-		};
-		ADE6BDA22819BADB00637158 /* MSChallenge-UIKitTests */ = {
-			isa = PBXGroup;
-			children = (
-				ADE6BDA32819BADB00637158 /* MSChallenge_UIKitTests.swift */,
-			);
-			path = "MSChallenge-UIKitTests";
-			sourceTree = "<group>";
-		};
-		ADE6BDAC2819BADB00637158 /* MSChallenge-UIKitUITests */ = {
-			isa = PBXGroup;
-			children = (
-				ADE6BDAD2819BADB00637158 /* MSChallenge_UIKitUITests.swift */,
-			);
-			path = "MSChallenge-UIKitUITests";
 			sourceTree = "<group>";
 		};
 		ADE6BDBC2819BD6B00637158 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				ADE6BDC12819C6EB00637158 /* Portfolio.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -156,9 +125,16 @@
 				ADE6BD8C2819BADA00637158 /* AppDelegate.swift */,
 				ADE6BD922819BADA00637158 /* Main.storyboard */,
 				ADE6BD972819BADB00637158 /* LaunchScreen.storyboard */,
-				ADE6BD9A2819BADB00637158 /* Info.plist */,
 			);
 			path = Core;
+			sourceTree = "<group>";
+		};
+		ADE6BDCD2819C8BF00637158 /* MSChallenge-UIKitTests */ = {
+			isa = PBXGroup;
+			children = (
+				ADE6BDD52819C90400637158 /* Portfolio_test.swift */,
+			);
+			path = "MSChallenge-UIKitTests";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -181,41 +157,23 @@
 			productReference = ADE6BD892819BADA00637158 /* MSChallenge-UIKit.app */;
 			productType = "com.apple.product-type.application";
 		};
-		ADE6BD9E2819BADB00637158 /* MSChallenge-UIKitTests */ = {
+		ADE6BDCB2819C8BF00637158 /* MSChallenge-UIKitTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = ADE6BDB62819BADB00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitTests" */;
+			buildConfigurationList = ADE6BDD22819C8BF00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitTests" */;
 			buildPhases = (
-				ADE6BD9B2819BADB00637158 /* Sources */,
-				ADE6BD9C2819BADB00637158 /* Frameworks */,
-				ADE6BD9D2819BADB00637158 /* Resources */,
+				ADE6BDC82819C8BF00637158 /* Sources */,
+				ADE6BDC92819C8BF00637158 /* Frameworks */,
+				ADE6BDCA2819C8BF00637158 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				ADE6BDA12819BADB00637158 /* PBXTargetDependency */,
+				ADE6BDD12819C8BF00637158 /* PBXTargetDependency */,
 			);
 			name = "MSChallenge-UIKitTests";
 			productName = "MSChallenge-UIKitTests";
-			productReference = ADE6BD9F2819BADB00637158 /* MSChallenge-UIKitTests.xctest */;
+			productReference = ADE6BDCC2819C8BF00637158 /* MSChallenge-UIKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		ADE6BDA82819BADB00637158 /* MSChallenge-UIKitUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = ADE6BDB92819BADB00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitUITests" */;
-			buildPhases = (
-				ADE6BDA52819BADB00637158 /* Sources */,
-				ADE6BDA62819BADB00637158 /* Frameworks */,
-				ADE6BDA72819BADB00637158 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				ADE6BDAB2819BADB00637158 /* PBXTargetDependency */,
-			);
-			name = "MSChallenge-UIKitUITests";
-			productName = "MSChallenge-UIKitUITests";
-			productReference = ADE6BDA92819BADB00637158 /* MSChallenge-UIKitUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
@@ -230,12 +188,9 @@
 					ADE6BD882819BADA00637158 = {
 						CreatedOnToolsVersion = 13.2.1;
 					};
-					ADE6BD9E2819BADB00637158 = {
+					ADE6BDCB2819C8BF00637158 = {
 						CreatedOnToolsVersion = 13.2.1;
-						TestTargetID = ADE6BD882819BADA00637158;
-					};
-					ADE6BDA82819BADB00637158 = {
-						CreatedOnToolsVersion = 13.2.1;
+						LastSwiftMigration = 1320;
 						TestTargetID = ADE6BD882819BADA00637158;
 					};
 				};
@@ -254,8 +209,7 @@
 			projectRoot = "";
 			targets = (
 				ADE6BD882819BADA00637158 /* MSChallenge-UIKit */,
-				ADE6BD9E2819BADB00637158 /* MSChallenge-UIKitTests */,
-				ADE6BDA82819BADB00637158 /* MSChallenge-UIKitUITests */,
+				ADE6BDCB2819C8BF00637158 /* MSChallenge-UIKitTests */,
 			);
 		};
 /* End PBXProject section */
@@ -271,14 +225,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADE6BD9D2819BADB00637158 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADE6BDA72819BADB00637158 /* Resources */ = {
+		ADE6BDCA2819C8BF00637158 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -292,39 +239,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE6BDC22819C6EB00637158 /* Portfolio.swift in Sources */,
 				ADE6BD912819BADA00637158 /* ViewController.swift in Sources */,
 				ADE6BD8D2819BADA00637158 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		ADE6BD9B2819BADB00637158 /* Sources */ = {
+		ADE6BDC82819C8BF00637158 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ADE6BDA42819BADB00637158 /* MSChallenge_UIKitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		ADE6BDA52819BADB00637158 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				ADE6BDAE2819BADB00637158 /* MSChallenge_UIKitUITests.swift in Sources */,
+				ADE6BDD62819C90400637158 /* Portfolio_test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		ADE6BDA12819BADB00637158 /* PBXTargetDependency */ = {
+		ADE6BDD12819C8BF00637158 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = ADE6BD882819BADA00637158 /* MSChallenge-UIKit */;
-			targetProxy = ADE6BDA02819BADB00637158 /* PBXContainerItemProxy */;
-		};
-		ADE6BDAB2819BADB00637158 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = ADE6BD882819BADA00637158 /* MSChallenge-UIKit */;
-			targetProxy = ADE6BDAA2819BADB00637158 /* PBXContainerItemProxy */;
+			targetProxy = ADE6BDD02819C8BF00637158 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -520,16 +455,45 @@
 			};
 			name = Release;
 		};
-		ADE6BDB72819BADB00637158 /* Debug */ = {
+		ADE6BDD32819C8BF00637158 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = KMHRAT3DN4;
 				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "VladHouse.MSChallenge-UIKitTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSChallenge-UIKit.app/MSChallenge-UIKit";
+			};
+			name = Debug;
+		};
+		ADE6BDD42819C8BF00637158 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KMHRAT3DN4;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "VladHouse.MSChallenge-UIKitTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -537,62 +501,6 @@
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSChallenge-UIKit.app/MSChallenge-UIKit";
-			};
-			name = Debug;
-		};
-		ADE6BDB82819BADB00637158 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KMHRAT3DN4;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VladHouse.MSChallenge-UIKitTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MSChallenge-UIKit.app/MSChallenge-UIKit";
-			};
-			name = Release;
-		};
-		ADE6BDBA2819BADB00637158 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KMHRAT3DN4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VladHouse.MSChallenge-UIKitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MSChallenge-UIKit";
-			};
-			name = Debug;
-		};
-		ADE6BDBB2819BADB00637158 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KMHRAT3DN4;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "VladHouse.MSChallenge-UIKitUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = "MSChallenge-UIKit";
 			};
 			name = Release;
 		};
@@ -617,20 +525,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		ADE6BDB62819BADB00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitTests" */ = {
+		ADE6BDD22819C8BF00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				ADE6BDB72819BADB00637158 /* Debug */,
-				ADE6BDB82819BADB00637158 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		ADE6BDB92819BADB00637158 /* Build configuration list for PBXNativeTarget "MSChallenge-UIKitUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				ADE6BDBA2819BADB00637158 /* Debug */,
-				ADE6BDBB2819BADB00637158 /* Release */,
+				ADE6BDD32819C8BF00637158 /* Debug */,
+				ADE6BDD42819C8BF00637158 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
