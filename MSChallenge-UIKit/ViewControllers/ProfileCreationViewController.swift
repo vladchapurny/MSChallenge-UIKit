@@ -99,7 +99,10 @@ class ProfileCreationViewController: UIViewController {
             portfolio.password = self.password.text ?? ""
             portfolio.website = self.website.text ?? ""
             
-            // TODO: Go to next page.
+            /// Go to confirmation page
+            let VC = ConfirmationViewController(portfolio: portfolio)
+            VC.modalPresentationStyle = .fullScreen
+            present(VC, animated: true)
             
         } else {
             

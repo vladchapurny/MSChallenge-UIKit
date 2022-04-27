@@ -99,5 +99,45 @@ class ProfileCreationViewController_test: XCTestCase {
         XCTAssertEqual(website.value as? String, originalValue as? String)
     }
     
+    /// Testing if we go to a new page
+    func test_going_to_confirmation() throws {
+        let email = app.textFields["Email Address"]
+        let password = app.secureTextFields["Password"]
+        let button = app.buttons["Submit"]
+        email.tap()
+        email.typeText("a")
+        app.keyboards.buttons["return"].tap()
+
+        password.tap()
+        password.typeText("a")
+        app.keyboards.buttons["return"].tap()
+        
+        button.tap()
+        XCTAssertTrue(app.staticTexts["Hello!"].exists)
+    }
+    
+    /// Testing if we go to a new page and first name is applied
+    func test_going_to_confirmation_with_name() throws {
+        let email = app.textFields["Email Address"]
+        let password = app.secureTextFields["Password"]
+        let firstName = app.textFields["First Name"]
+        let button = app.buttons["Submit"]
+        
+        firstName.tap()
+        firstName.typeText("a")
+        app.keyboards.buttons["return"].tap()
+        
+        email.tap()
+        email.typeText("a")
+        app.keyboards.buttons["return"].tap()
+
+        password.tap()
+        password.typeText("a")
+        app.keyboards.buttons["return"].tap()
+        
+        button.tap()
+        XCTAssertTrue(app.staticTexts["Hello, a!"].exists)
+    }
+    
     // TODO: Test inits and edge cases - and more actions!
 }
