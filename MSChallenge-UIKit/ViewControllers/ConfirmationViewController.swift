@@ -46,7 +46,7 @@ class ConfirmationViewController: UIViewController {
         txt.dataDetectorTypes = .link
         txt.attributedText = NSAttributedString(string: "\(portfolio.website)", attributes: [.underlineStyle: NSUnderlineStyle.single.rawValue])
         txt.textAlignment = .center
-        txt.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        txt.font = UIFont.AFFontBold(size: 16)
         return txt
     }()
     
@@ -54,7 +54,7 @@ class ConfirmationViewController: UIViewController {
     private lazy var firstName: UILabel = {
         let lbl = UILabel()
         lbl.numberOfLines = 0
-        lbl.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        lbl.font = UIFont.AFFontBold(size: 16)
         lbl.text = portfolio.firstName
         lbl.textAlignment = .center
         return lbl
@@ -64,7 +64,7 @@ class ConfirmationViewController: UIViewController {
     private lazy var email: UILabel = {
         let lbl = UILabel()
         lbl.numberOfLines = 0
-        lbl.font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        lbl.font = UIFont.AFFontBold(size: 16)
         lbl.text = portfolio.email
         lbl.textAlignment = .center
         return lbl

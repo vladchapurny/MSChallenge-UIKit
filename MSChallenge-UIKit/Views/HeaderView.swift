@@ -20,7 +20,7 @@ class HeaderView: UIView {
         let lbl = UILabel()
         lbl.translatesAutoresizingMaskIntoConstraints = false
         lbl.numberOfLines = 0
-        lbl.font = UIFont.systemFont(ofSize: 42, weight: .bold)
+        lbl.font = UIFont.AFFontBold(size: 42)
         return lbl
     }()
     
@@ -32,7 +32,7 @@ class HeaderView: UIView {
         txt.isEditable = false
         txt.isSelectable = false
         txt.textContainer.lineFragmentPadding = 0
-        txt.font = UIFont.systemFont(ofSize: 18, weight: .regular)
+        txt.font = UIFont.AFFontRegular(size: 18)
         txt.backgroundColor = .clear
         return txt
     }()

@@ -33,7 +33,7 @@ class CustomTextField: UITextField, UITextFieldDelegate {
         self.init(frame: .zero)
         placeholder = title
         autocorrectionType = UITextAutocorrectionType.no
-        font = UIFont.systemFont(ofSize: 16, weight: .bold)
+        font = UIFont.AFFontBold(size: 16)
         clearButtonMode = UITextField.ViewMode.whileEditing
         layer.borderWidth = 1.5
         layer.cornerRadius = 10
