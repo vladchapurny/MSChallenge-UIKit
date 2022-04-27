@@ -33,11 +33,19 @@ class ProfileCreationViewController_test: XCTestCase {
         let header = app.staticTexts["Profile Creation"]
         let subheading = app.textViews.staticTexts["Use the form below to submit your portfolio."]
         let subheading2 = app.textViews.staticTexts["An email and password are required."]
+        let firstName = app.textFields["First Name"]
+        let email = app.textFields["Email Address"]
+        let password = app.textFields["Password"]
+        let website = app.textFields["Website"]
         let submitButton = app.buttons["Submit"]
-        
+                
         XCTAssertTrue(header.exists)
         XCTAssertTrue(subheading.exists)
         XCTAssertTrue(subheading2.exists)
+        XCTAssertTrue(firstName.exists)
+        XCTAssertTrue(email.exists)
+        XCTAssertTrue(password.exists)
+        XCTAssertTrue(website.exists)
         XCTAssertTrue(submitButton.exists)
     }
     
@@ -53,6 +61,53 @@ class ProfileCreationViewController_test: XCTestCase {
         
         let submitButton = app.buttons["Submit"]
         XCTAssertEqual(submitButton.label, "Submit")
+    }
+    
+    //Basic test that tests firstName text Field
+    func test_firstName_textField() throws {
+        let firstName = app.textFields["First Name"]
+        let originalValue = firstName.value
+        
+        firstName.tap()
+        firstName.typeText("a")
+        XCTAssertEqual(firstName.value as? String, "a")
+        firstName.buttons["Clear text"].tap()
+        XCTAssertEqual(firstName.value as? String, originalValue as? String)
+    }
+    
+    //Basic test that tests email text Field
+    func test_email_textField() throws {
+        let email = app.textFields["Email Address"]
+        let originalValue = email.value
+        email.tap()
+        email.typeText("a")
+        XCTAssertEqual(email.value as? String, "a")
+        email.buttons["Clear text"].tap()
+        XCTAssertEqual(email.value as? String, originalValue as? String)
+    }
+    
+    //Basic test that tests email text Field
+    func test_password_textField() throws {
+        let password = app.textFields["Password"]
+        let originalValue = password.value
+        
+        password.tap()
+        password.typeText("a")
+        XCTAssertEqual(password.value as? String, "a")
+        password.buttons["Clear text"].tap()
+        XCTAssertEqual(password.value as? String, originalValue as? String)
+    }
+    
+    //Basic test that tests email text Field
+    func test_website_textField() throws {
+        let website = app.textFields["Website"]
+        let originalValue = website.value
+        
+        website.tap()
+        website.typeText("a")
+        XCTAssertEqual(website.value as? String, "a")
+        website.buttons["Clear text"].tap()
+        XCTAssertEqual(website.value as? String, originalValue as? String)
     }
     
     //Built in test case to test performance
