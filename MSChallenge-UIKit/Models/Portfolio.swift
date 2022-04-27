@@ -23,10 +23,9 @@ struct Portfolio {
     ///User website
     var website: String = ""
     
-    // Adding init
+    ///init
     init() {}
     
-    // TODO: Encapsulation in the future.
-    
+    // TODO: Encapsulation.
 }
 

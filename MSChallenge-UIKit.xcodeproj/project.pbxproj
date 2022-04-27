@@ -15,6 +15,9 @@
 		ADE6BDD62819C90400637158 /* Portfolio_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDD52819C90400637158 /* Portfolio_test.swift */; };
 		ADE6BDD82819CD2000637158 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDD72819CD2000637158 /* HeaderView.swift */; };
 		ADE6BDE92819D1FE00637158 /* ProfileCreationViewController_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDE82819D1FE00637158 /* ProfileCreationViewController_test.swift */; };
+		ADE6BDED2819E13100637158 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDEC2819E13100637158 /* CustomTextField.swift */; };
+		ADE6BDEF2819E53000637158 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDEE2819E53000637158 /* Extensions.swift */; };
+		ADE6BDF32819EF3C00637158 /* CustomTextField_test.swift in Sources */ = {isa = PBXBuildFile; fileRef = ADE6BDF22819EF3C00637158 /* CustomTextField_test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,9 @@
 		ADE6BDD72819CD2000637158 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
 		ADE6BDDD2819D18C00637158 /* MSChallenge-UIKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MSChallenge-UIKitUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		ADE6BDE82819D1FE00637158 /* ProfileCreationViewController_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCreationViewController_test.swift; sourceTree = "<group>"; };
+		ADE6BDEC2819E13100637158 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		ADE6BDEE2819E53000637158 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		ADE6BDF22819EF3C00637158 /* CustomTextField_test.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField_test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +133,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE6BDD72819CD2000637158 /* HeaderView.swift */,
+				ADE6BDEC2819E13100637158 /* CustomTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -135,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE6BD952819BADB00637158 /* Assets.xcassets */,
+				ADE6BDEE2819E53000637158 /* Extensions.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -152,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				ADE6BDD52819C90400637158 /* Portfolio_test.swift */,
+				ADE6BDF22819EF3C00637158 /* CustomTextField_test.swift */,
 			);
 			path = "MSChallenge-UIKitTests";
 			sourceTree = "<group>";
@@ -297,9 +306,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				ADE6BDC22819C6EB00637158 /* Portfolio.swift in Sources */,
+				ADE6BDEF2819E53000637158 /* Extensions.swift in Sources */,
 				ADE6BD912819BADA00637158 /* ProfileCreationViewController.swift in Sources */,
 				ADE6BD8D2819BADA00637158 /* AppDelegate.swift in Sources */,
 				ADE6BDD82819CD2000637158 /* HeaderView.swift in Sources */,
+				ADE6BDED2819E13100637158 /* CustomTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +318,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ADE6BDF32819EF3C00637158 /* CustomTextField_test.swift in Sources */,
 				ADE6BDD62819C90400637158 /* Portfolio_test.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

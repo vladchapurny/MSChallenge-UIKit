@@ -34,56 +34,41 @@ class ProfileCreationViewController: UIViewController {
         return stack
     }()
     
-    private let firstName: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "First Name"
-        tf.autocorrectionType = UITextAutocorrectionType.no
-        tf.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        tf.clearButtonMode = UITextField.ViewMode.whileEditing
-        tf.borderStyle = UITextField.BorderStyle.roundedRect
+    /// FirstName TextField
+    private let firstName: CustomTextField = {
+        return CustomTextField(title: "First Name")
+    }()
+    
+    /// Email TextField
+    private let email: CustomTextField = {
+        let tf = CustomTextField(title: "Email Address")
+        tf.keyboardType = .emailAddress
+        /// Added to avoid keychain saving
+        tf.textContentType = .oneTimeCode
         return tf
     }()
     
-    private let email: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "Email Address"
-        tf.autocorrectionType = UITextAutocorrectionType.no
-        tf.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        tf.clearButtonMode = UITextField.ViewMode.whileEditing
-        tf.borderStyle = UITextField.BorderStyle.roundedRect
+    /// Password TextField
+    private let password: CustomTextField = {
+        let tf = CustomTextField(title: "Password")
+        tf.isSecureTextEntry = true
+        /// Added to avoid keychain saving
+        tf.textContentType = .oneTimeCode
         return tf
     }()
     
-    private let password: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "Password"
-        tf.autocorrectionType = UITextAutocorrectionType.no
-        tf.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        tf.clearButtonMode = UITextField.ViewMode.whileEditing
-        tf.borderStyle = UITextField.BorderStyle.roundedRect
-        return tf
-    }()
-    
-    private let website: UITextField = {
-        let tf = UITextField()
-        tf.placeholder = "Website"
-        tf.autocorrectionType = UITextAutocorrectionType.no
-        tf.font = UIFont.systemFont(ofSize: 16, weight: .bold)
-        tf.clearButtonMode = UITextField.ViewMode.whileEditing
-        tf.borderStyle = UITextField.BorderStyle.roundedRect
+    /// Website TextField
+    private let website: CustomTextField = {
+        let tf = CustomTextField(title: "Website")
+        tf.keyboardType = .URL
         return tf
     }()
     
     ///Submit Button
     private let submitButton: UIButton = {
         let button = UIButton(type: .system)
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.backgroundColor = .red
-        button.setTitle("Submit", for: .normal)
-        button.setTitleColor(.white, for: .normal)
-        button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 16)
-        button.layer.cornerRadius = 20
-        button.layer.masksToBounds = true
+        button.customButton(title: "Submit")
+        button.addTarget(self, action: #selector(submitButtonTap), for: .touchUpInside)
         return button
     }()
     
@@ -94,12 +79,41 @@ class ProfileCreationViewController: UIViewController {
         setupViews()
         setupConstraints()
     }
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        /// Bounds only load here and are required to apply gradient
+        submitButton.customGradient()
+    }
 
+    // MARK: - ObjC Functions
+    
+    @objc fileprivate func submitButtonTap() {
+        
+        if let password = password.text, let email = email.text,
+            !password.isEmpty, !email.isEmpty {
+            
+            portfolio.firstName = self.firstName.text ?? ""
+            portfolio.email = self.email.text ?? ""
+            portfolio.password = self.password.text ?? ""
+            portfolio.website = self.website.text ?? ""
+            
+            // TODO: Go to next page.
+            
+        } else {
+            
+            /// Highlight TextFields borders red if either of the required elements are empty
+            password.checkIfEmpty()
+            email.checkIfEmpty()
+        }
+    }
+    
     // MARK: - Functions
     
     ///Set views
     func setupViews() {
-        
+        view.backgroundColor = UIColor.systemBackground
         view.addSubview(headerView)
         [firstName, email, password, website].forEach { formStack.addArrangedSubview($0) }
         view.addSubview(formStack)

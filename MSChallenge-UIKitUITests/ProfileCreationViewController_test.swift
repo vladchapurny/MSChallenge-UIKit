@@ -6,6 +6,7 @@
 //
 
 import XCTest
+import MSChallenge_UIKit
 
 class ProfileCreationViewController_test: XCTestCase {
 
@@ -27,7 +28,7 @@ class ProfileCreationViewController_test: XCTestCase {
         // Put teardown code here. This method is called after the invocation of each test method in the class.
     }
 
-    //Basic test that content exists
+    ///Basic test that content exists
     func test_content_exists() throws {
  
         let header = app.staticTexts["Profile Creation"]
@@ -35,7 +36,7 @@ class ProfileCreationViewController_test: XCTestCase {
         let subheading2 = app.textViews.staticTexts["An email and password are required."]
         let firstName = app.textFields["First Name"]
         let email = app.textFields["Email Address"]
-        let password = app.textFields["Password"]
+        let password = app.secureTextFields["Password"]
         let website = app.textFields["Website"]
         let submitButton = app.buttons["Submit"]
                 
@@ -49,21 +50,21 @@ class ProfileCreationViewController_test: XCTestCase {
         XCTAssertTrue(submitButton.exists)
     }
     
-    //Basic test that title of page is correct
+    ///Basic test that title of page is correct
     func test_title() throws {
         
         let header = app.staticTexts["Profile Creation"]
         XCTAssertEqual(header.label, "Profile Creation")
     }
     
-    //Basic test that button is on the page with the correct label
+    ///Basic test that button is on the page with the correct label
     func test_submit_button() throws {
         
         let submitButton = app.buttons["Submit"]
         XCTAssertEqual(submitButton.label, "Submit")
     }
     
-    //Basic test that tests firstName text Field
+    ///Basic test that tests firstName text Field
     func test_firstName_textField() throws {
         let firstName = app.textFields["First Name"]
         let originalValue = firstName.value
@@ -75,7 +76,7 @@ class ProfileCreationViewController_test: XCTestCase {
         XCTAssertEqual(firstName.value as? String, originalValue as? String)
     }
     
-    //Basic test that tests email text Field
+    ///Basic test that tests email text Field
     func test_email_textField() throws {
         let email = app.textFields["Email Address"]
         let originalValue = email.value
@@ -86,19 +87,7 @@ class ProfileCreationViewController_test: XCTestCase {
         XCTAssertEqual(email.value as? String, originalValue as? String)
     }
     
-    //Basic test that tests email text Field
-    func test_password_textField() throws {
-        let password = app.textFields["Password"]
-        let originalValue = password.value
-        
-        password.tap()
-        password.typeText("a")
-        XCTAssertEqual(password.value as? String, "a")
-        password.buttons["Clear text"].tap()
-        XCTAssertEqual(password.value as? String, originalValue as? String)
-    }
-    
-    //Basic test that tests email text Field
+    ///Basic test that tests email text Field
     func test_website_textField() throws {
         let website = app.textFields["Website"]
         let originalValue = website.value
@@ -110,15 +99,5 @@ class ProfileCreationViewController_test: XCTestCase {
         XCTAssertEqual(website.value as? String, originalValue as? String)
     }
     
-    //Built in test case to test performance
-    func testLaunchPerformance() throws {
-        if #available(macOS 10.15, iOS 13.0, tvOS 13.0, watchOS 7.0, *) {
-            // This measures how long it takes to launch your application.
-            measure(metrics: [XCTApplicationLaunchMetric()]) {
-                XCUIApplication().launch()
-            }
-        }
-    }
-    
-    //Add more test cases!
+    // TODO: Test inits and edge cases - and more actions!
 }

@@ -7,6 +7,10 @@
 
 import UIKit
 
+/*
+ * HeaderView
+ * UIView Header text for the View Controllers.
+ */
 class HeaderView: UIView {
 
     // MARK: - Views
@@ -40,6 +44,8 @@ class HeaderView: UIView {
     }
     
     /// Convenience init for setting the title and subheading text
+    /// - Parameter title: title String of the header
+    /// - Parameter subheading: subheading String for the header
     convenience init(title: String, subheading: String) {
         self.init(frame: .zero)
         self.titleLabel.text = title
